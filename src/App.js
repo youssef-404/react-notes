@@ -28,11 +28,14 @@ export default function App() {
     }
     
     function updateNote(text) {
-        setNotes(oldNotes => oldNotes.map(oldNote => {
-            return oldNote.id === currentNoteId
-                ? { ...oldNote, body: text }
-                : oldNote
-        }))
+        setNotes(oldNotes => {
+            const newNotes=[]
+            oldNotes.forEach(oldNote => {
+                oldNote.id === currentNoteId
+                ? newNotes.unshift({ ...oldNote, body: text }):newNotes.push(oldNote)
+            })
+            return newNotes
+        })
     }
     
     function findCurrentNote() {
