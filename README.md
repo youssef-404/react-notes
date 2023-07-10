@@ -2,7 +2,7 @@
 
 Welcome to the React Note App! This app allows you to create, save, update, and delete notes, as well as preview them in a markdown format.
 
-### [You can check the app here!](sparkling-melba-37addc.netlify.app/)
+### [You can check the app here!](https://sparkling-melba-37addc.netlify.app/)
 
 
 ## Getting Started
